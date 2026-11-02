@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gyms near me · Sample results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/tools.css">
+</head>
+<body class="serp-body">
+  <div class="serp">
+    <header class="serp-top">
+      <div class="serp-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>gyms near me</span>
+      </div>
+      <nav class="serp-tabs" aria-label="Result types">
+        <a class="is-active" href="#">All</a><a href="#">Maps</a><a href="#">Reviews</a><a href="#">Open now</a>
+      </nav>
+    </header>
+    <p class="serp-meta">5 gyms near you · sample results</p>
+    <ol class="serp-list">
+      <li class="serp-item is-visited">
+        <div class="serp-thumb" style="background-image:url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=200&h=200&q=60')"></div>
+        <div class="serp-info">
+          <h3>Ironworks Gym</h3>
+          <p class="serp-rating"><b>4.3</b> <span class="s">★★★★☆</span> (212) · 0.3 mi</p>
+          <p class="serp-desc">Gym · <span class="serp-open">Open</span> until 10pm</p>
+          <span class="serp-chip">Just visited</span>
+        </div>
+      </li>
+      <li class="serp-item" id="nextGym">
+        <div class="serp-thumb" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=200&h=200&q=60')"></div>
+        <div class="serp-info">
+          <h3>Foundry Fitness Club</h3>
+          <p class="serp-rating"><b>4.6</b> <span class="s">★★★★★</span> (348) · 0.5 mi</p>
+          <p class="serp-desc">Gym · <span class="serp-open">Open</span> until 11pm · Classes daily</p>
+          <span class="serp-chip">Next result</span>
+        </div>
+      </li>
+      <li class="serp-item">
+        <div class="serp-thumb" style="background-image:url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=200&h=200&q=60')"></div>
+        <div class="serp-info">
+          <h3>Pulse Cycle Studio</h3>
+          <p class="serp-rating"><b>4.8</b> <span class="s">★★★★★</span> (127) · 0.7 mi</p>
+          <p class="serp-desc">Spin studio · <span class="serp-open">Open</span> until 9pm</p>
+        </div>
+      </li>
+      <li class="serp-item">
+        <div class="serp-thumb" style="background-image:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=200&h=200&q=60')"></div>
+        <div class="serp-info">
+          <h3>Northside Strength Co.</h3>
+          <p class="serp-rating"><b>4.4</b> <span class="s">★★★★☆</span> (96) · 1.1 mi</p>
+          <p class="serp-desc">Gym · <span class="serp-open">Open</span> 24 hours</p>
+        </div>
+      </li>
+      <li class="serp-item">
+        <div class="serp-thumb" style="background-image:url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=200&h=200&q=60')"></div>
+        <div class="serp-info">
+          <h3>Anvil Athletics</h3>
+          <p class="serp-rating"><b>4.2</b> <span class="s">★★★★☆</span> (64) · 1.4 mi</p>
+          <p class="serp-desc">Gym · <span class="serp-open">Open</span> until 10pm</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <script>
+    // Scripted sequence for the recording: highlight the next gym, then tap it.
+    // Add ?static to the URL to show the highlighted state without the animation.
+    (() => {
+      const next = document.getElementById('nextGym');
+      const highlight = () => next.classList.add('is-highlight');
+      if (new URLSearchParams(location.search).has('static')) { highlight(); return; }
+      setTimeout(highlight, 1300);
+      setTimeout(() => {
+        const dot = document.createElement('span');
+        dot.className = 'tap';
+        dot.style.left = '62%';
+        dot.style.top = '50%';
+        next.appendChild(dot);
+        next.classList.add('is-pressed');
+        setTimeout(() => next.classList.remove('is-pressed'), 180);
+      }, 2300);
+    })();
+  </script>
+</body>
+</html>

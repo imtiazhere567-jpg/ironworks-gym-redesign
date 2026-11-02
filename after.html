@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ironworks Gym · Train 6am–10pm, 7 days (Sample Site)</title>
+  <meta name="description" content="Ironworks Gym sample site: Spin, HIIT and Yoga classes, a full free-weights floor, open 6am–10pm, 7 days. £29/month, no contract.">
+  <meta name="theme-color" content="#0d0d0e">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top"><span class="logo-mark">IW</span>Ironworks</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#classes">Classes</a>
+      <a href="#floor">The floor</a>
+      <a href="#timetable">Timetable</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a class="btn btn-sm" href="#pricing" data-join="monthly">Join</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <div class="hero-pin" id="heroPin">
+    <section class="hero" id="hero">
+      <div class="hero-media">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline
+          poster="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1600&q=70">
+          <source src="https://assets.mixkit.co/videos/52317/52317-720.mp4" type="video/mp4">
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+      </div>
+      <p class="hero-side" aria-hidden="true">Est. 2009 — 12 Foundry Lane</p>
+
+      <div class="hero-inner">
+        <p class="hero-status hero-in" style="--d:0"><span class="dot"></span><span id="openStatus">Open now · until 10pm</span></p>
+        <h1 class="hero-title" aria-label="Train 6am–10pm, 7 days.">
+          <span class="line" data-chars>Train</span>
+          <span class="accent-wrap">
+            <span class="line accent" data-chars>6am–10pm,</span>
+            <svg class="scribble" viewBox="0 0 320 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 70 3, 170 2, 317 9"/></svg>
+          </span>
+          <span class="line outline" data-chars>7 days.</span>
+        </h1>
+        <div class="hero-aside">
+          <p class="hero-sub hero-in" style="--d:4">Spin, HIIT, Yoga and a full free-weights floor, all under one warehouse roof.</p>
+          <ul class="hero-classes hero-in" style="--d:5" aria-label="Classes">
+            <li><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=80&h=80&q=60" alt="">Spin</li>
+            <li><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=80&h=80&q=60" alt="">HIIT</li>
+            <li><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=80&h=80&q=60" alt="">Yoga</li>
+          </ul>
+          <div class="hero-cta hero-in" style="--d:6">
+            <a class="btn btn-arrow magnetic" href="#pricing" data-join="monthly">Join for £29/month <span class="btn-ic" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost magnetic" href="#timetable">Classes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bar hero-in" style="--d:7">
+        <div><strong>£29</strong><span>a month, no contract</span></div>
+        <div><strong data-count="42">42</strong><span>classes a week</span></div>
+        <div><strong>4.8★</strong><span>member rating</span></div>
+        <button class="hero-play" id="heroPlay" type="button" aria-label="Pause video">
+          <svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20"/><circle class="ring-fill" cx="22" cy="22" r="20" pathLength="100"/></svg>
+          <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3v14H8zM13 5h3v14h-3z"/></svg>
+          <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+
+      <p class="hero-reveal" aria-hidden="true">
+        <span style="--k:0">No contract.</span>
+        <span style="--k:1">No queues.</span>
+        <span class="accent" style="--k:2">Just training.</span>
+      </p>
+      <div class="hero-scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+    </div>
+
+    <!-- Crossing tapes (items are cloned to fill the width in site.js) -->
+    <div class="tapes" aria-hidden="true">
+      <div class="tape tape-back">
+        <div class="tape-track" data-dir="1">
+          <span class="tape-item">Strength</span><span class="tape-item o">Conditioning</span><span class="tape-item">Spin</span>
+          <span class="tape-item o">HIIT</span><span class="tape-item">Yoga</span><span class="tape-item o">Coaching</span>
+        </div>
+      </div>
+      <div class="tape tape-front">
+        <div class="tape-track" data-dir="-1">
+          <span class="tape-item">No contract</span><span class="tape-item o">Open 7 days</span><span class="tape-item">6am–10pm</span>
+          <span class="tape-item o">£29/month</span><span class="tape-item">First class free</span><span class="tape-item o">No queues</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Numbers bento -->
+    <section class="numbers" aria-labelledby="numbersTitle">
+      <div class="bento">
+        <div class="cell cell-intro">
+          <p class="eyebrow">By the numbers</p>
+          <h2 id="numbersTitle" data-words data-accent-from="8">Big enough to train properly. Small enough to know your name.</h2>
+        </div>
+
+        <div class="cell cell-floor">
+          <svg class="blueprint" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path pathLength="1" d="M10 10 H390 V190 H10 Z"/>
+            <path pathLength="1" d="M150 10 V120 M150 150 V190 M270 10 V80 M270 110 V190 M150 120 H215"/>
+            <path pathLength="1" d="M30 30 h40 v18 h-40 Z M30 62 h40 v18 h-40 Z M30 94 h40 v18 h-40 Z M90 30 h40 v18 h-40 Z M90 62 h40 v18 h-40 Z M90 94 h40 v18 h-40 Z"/>
+            <path pathLength="1" d="M290 130 h80 v40 h-80 Z M300 30 h18 v60 h-18 Z M330 30 h18 v60 h-18 Z M360 30 h18 v60 h-18 Z"/>
+            <path pathLength="1" d="M175 25 a22 22 0 1 0 0.1 0 M235 25 a22 22 0 1 0 0.1 0"/>
+          </svg>
+          <div class="cell-body">
+            <strong data-scrub="1400" data-suffix="m²">1,400m²</strong>
+            <span class="label">of training floor</span>
+            <ul class="zones"><li>Free weights</li><li>Platforms</li><li>Cardio deck</li><li>2 studios</li></ul>
+          </div>
+        </div>
+
+        <div class="cell cell-classes">
+          <div class="cell-head">
+            <div><strong data-scrub="42">42</strong><span class="label">classes every week</span></div>
+            <span class="pill">Spin · HIIT · Yoga</span>
+          </div>
+          <ol class="bars" aria-label="Classes per day">
+            <li style="--v:6"><i data-n="6"></i><b>Mon</b></li>
+            <li style="--v:6"><i data-n="6"></i><b>Tue</b></li>
+            <li style="--v:7"><i data-n="7"></i><b>Wed</b></li>
+            <li style="--v:6"><i data-n="6"></i><b>Thu</b></li>
+            <li style="--v:6"><i data-n="6"></i><b>Fri</b></li>
+            <li style="--v:6"><i data-n="6"></i><b>Sat</b></li>
+            <li style="--v:5"><i data-n="5"></i><b>Sun</b></li>
+          </ol>
+        </div>
+
+        <div class="cell cell-hours">
+          <div class="clock">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="clock-track" cx="60" cy="60" r="50"/>
+              <circle class="clock-arc" cx="60" cy="60" r="50" pathLength="24"/>
+              <g class="clock-now" id="clockNow"><line x1="60" y1="60" x2="60" y2="18"/><circle cx="60" cy="18" r="3.5"/></g>
+              <text x="60" y="8" text-anchor="middle">0</text><text x="116" y="63" text-anchor="end">6</text>
+              <text x="60" y="118" text-anchor="middle">12</text><text x="4" y="63">18</text>
+            </svg>
+            <strong data-scrub="16" data-suffix="h">16h</strong>
+          </div>
+          <span class="label">open every day<br>06:00 – 22:00</span>
+        </div>
+
+        <div class="cell cell-price">
+          <span class="stamp">No contract</span>
+          <strong data-scrub="29" data-prefix="£">£29</strong>
+          <span class="label">a month · no joining fee · cancel any time</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes: sticky intro + stacking cards -->
+    <section class="section classes" id="classes">
+      <div class="classes-grid">
+        <aside class="classes-intro">
+          <p class="eyebrow" data-reveal>Classes</p>
+          <h2 data-split>Three ways to sweat</h2>
+          <p class="lede" data-reveal>Every class is included in your membership. Book in the app, turn up, train.</p>
+          <ol class="class-nav" data-reveal>
+            <li class="is-active"><button type="button" data-goto="0"><span>01</span>Spin</button></li>
+            <li><button type="button" data-goto="1"><span>02</span>HIIT</button></li>
+            <li><button type="button" data-goto="2"><span>03</span>Yoga</button></li>
+          </ol>
+          <p class="classes-note" data-reveal>All three included in <b>£29/month</b></p>
+        </aside>
+        <div class="class-stack">
+        <article class="class-card" id="class-spin" style="--n:0">
+          <div class="class-media">
+            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1100&q=70" alt="Rows of spin bikes in a bright studio" loading="lazy">
+            <span class="class-tag">45 min · High energy</span>
+            <span class="class-num" aria-hidden="true">01</span>
+          </div>
+          <div class="class-body">
+            <h3>Spin</h3>
+            <p>Lights down, music up. Climbs, sprints and intervals in our 30-bike studio.</p>
+            <dl class="class-meta">
+              <div><dt>Intensity</dt><dd><span class="meter" role="img" aria-label="4 out of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd></div>
+              <div><dt>Coach</dt><dd>Dani</dd></div>
+              <div class="wide"><dt>Daily</dt><dd>06:30 · 12:15 · 19:00</dd></div>
+            </dl>
+            <a class="class-cta" href="#timetable">Book Spin <span class="class-cta-ic" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="class-card" id="class-hiit" style="--n:1">
+          <div class="class-media">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1100&q=70" alt="Athlete training with battle ropes" loading="lazy">
+            <span class="class-tag">30 min · Full body</span>
+            <span class="class-num" aria-hidden="true">02</span>
+          </div>
+          <div class="class-body">
+            <h3>HIIT</h3>
+            <p>Ropes, sleds and kettlebells in short, hard rounds. Done in half an hour.</p>
+            <dl class="class-meta">
+              <div><dt>Intensity</dt><dd><span class="meter" role="img" aria-label="5 out of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd></div>
+              <div><dt>Coach</dt><dd>Marcus &amp; Leah</dd></div>
+              <div class="wide"><dt>Daily</dt><dd>07:15 · 13:00 · 18:00</dd></div>
+            </dl>
+            <a class="class-cta" href="#timetable">Book HIIT <span class="class-cta-ic" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="class-card" id="class-yoga" style="--n:2">
+          <div class="class-media">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1100&q=70" alt="Yoga class on mats in a sunlit studio" loading="lazy">
+            <span class="class-tag">60 min · Mobility</span>
+            <span class="class-num" aria-hidden="true">03</span>
+          </div>
+          <div class="class-body">
+            <h3>Yoga</h3>
+            <p>Flow, stretch and breathe. The perfect reset after a heavy week on the floor.</p>
+            <dl class="class-meta">
+              <div><dt>Intensity</dt><dd><span class="meter" role="img" aria-label="2 out of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></dd></div>
+              <div><dt>Coach</dt><dd>Priya</dd></div>
+              <div class="wide"><dt>Daily</dt><dd>09:30 · 12:30 · 20:00</dd></div>
+            </dl>
+            <a class="class-cta" href="#timetable">Book Yoga <span class="class-cta-ic" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video band: pinned, opens from a small window as you scroll -->
+    <div class="band-pin" id="bandPin">
+    <section class="band" aria-label="Built for real training">
+      <div class="band-media">
+        <video muted loop playsinline preload="none"
+          poster="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=70">
+          <source src="https://assets.mixkit.co/videos/52091/52091-720.mp4" type="video/mp4">
+        </video>
+        <div class="band-shade"></div>
+      </div>
+      <p class="band-word" aria-hidden="true">Lift · Sweat · Repeat · Lift · Sweat · Repeat</p>
+      <p class="band-word is-low" aria-hidden="true">Ironworks · Ironworks · Ironworks</p>
+      <div class="band-inner">
+        <h2 data-words>Built for real training</h2>
+        <p class="band-sub">Twelve racks, Olympic platforms and dumbbells to 50kg. No queueing.</p>
+        <ul class="band-stats">
+          <li style="--k:0"><strong>12</strong><span>squat racks</span></li>
+          <li style="--k:1"><strong>4</strong><span>lifting platforms</span></li>
+          <li style="--k:2"><strong>50kg</strong><span>top dumbbell</span></li>
+        </ul>
+      </div>
+    </section>
+    </div>
+
+    <!-- The floor: pinned virtual tour (marker walks the plan, photos open zone by zone) -->
+    <div class="tour-pin" id="floor">
+    <section class="tour" aria-labelledby="tourTitle">
+      <div class="tour-photos">
+        <figure class="tour-photo is-active" style="--ox:50%;--oy:60%"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1400&q=70" alt="A row of treadmills under warm lighting"></figure>
+        <figure class="tour-photo" style="--ox:100%;--oy:0%"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=70" alt="Dumbbell racks along the main gym floor" loading="lazy"></figure>
+        <figure class="tour-photo" style="--ox:100%;--oy:100%"><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1400&q=70" alt="Benches and machines in the strength zone" loading="lazy"></figure>
+        <figure class="tour-photo" style="--ox:0%;--oy:100%"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=70" alt="Barbell lift on rubber flooring" loading="lazy"></figure>
+        <figure class="tour-photo" style="--ox:0%;--oy:0%"><img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1400&q=70" alt="Close-up of a rack of black dumbbells" loading="lazy"></figure>
+        <span class="tour-big" id="tourBig" aria-hidden="true">01</span>
+      </div>
+      <div class="tour-side">
+        <div class="tour-head">
+          <p class="eyebrow">The floor</p>
+          <h2 id="tourTitle">Walk the floor</h2>
+          <p class="tour-lede">Take a look around before you visit. This is the gym you'll actually walk into.</p>
+        </div>
+        <div class="tour-card">
+          <div class="tour-zones" aria-live="polite">
+            <article class="tour-zone is-active">
+              <span class="tz-num">01 <em>/ 05</em></span>
+              <h3>Cardio deck</h3>
+              <p>24 treadmills, rowers and bikes facing the windows. Warm up, cool down, or chase a new 5k.</p>
+              <span class="tz-fact">24 machines</span>
+            </article>
+            <article class="tour-zone">
+              <span class="tz-num">02 <em>/ 05</em></span>
+              <h3>Free weights</h3>
+              <p>Racks on racks. Benches, cables and a long mirror wall so you never wait for kit.</p>
+              <span class="tz-fact">Benches for 20</span>
+            </article>
+            <article class="tour-zone">
+              <span class="tz-num">03 <em>/ 05</em></span>
+              <h3>Strength zone</h3>
+              <p>Twelve squat racks and plate-loaded machines in a quiet corner built for heavy days.</p>
+              <span class="tz-fact">12 racks</span>
+            </article>
+            <article class="tour-zone">
+              <span class="tz-num">04 <em>/ 05</em></span>
+              <h3>Platforms</h3>
+              <p>Four Olympic lifting platforms with bumper plates and chalk. Drop it like you mean it.</p>
+              <span class="tz-fact">4 platforms</span>
+            </article>
+            <article class="tour-zone">
+              <span class="tz-num">05 <em>/ 05</em></span>
+              <h3>Dumbbells to 50kg</h3>
+              <p>Pairs from 2kg all the way to 50kg, so you never outgrow the rack.</p>
+              <span class="tz-fact">2kg – 50kg</span>
+            </article>
+          </div>
+          <div class="tour-steps" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="tour-map">
+            <svg viewBox="0 0 320 170" role="img" aria-label="Floor plan of Ironworks Gym">
+              <rect class="tm-wall" x="2" y="2" width="316" height="166" rx="8"/>
+              <g class="tm-zone is-active"><rect x="10" y="10" width="120" height="60" rx="4"/><text x="18" y="26">Cardio</text></g>
+              <g class="tm-zone"><rect x="140" y="10" width="90" height="75" rx="4"/><text x="148" y="26">Weights</text></g>
+              <g class="tm-zone"><rect x="240" y="10" width="70" height="150" rx="4"/><text x="248" y="26">Strength</text></g>
+              <g class="tm-zone"><rect x="140" y="95" width="90" height="65" rx="4"/><text x="148" y="111">Platforms</text></g>
+              <g class="tm-zone"><rect x="10" y="80" width="120" height="80" rx="4"/><text x="18" y="96">Dumbbells</text></g>
+              <path class="tm-route-bg" id="tourRouteBg"/>
+              <path class="tm-route" id="tourRoute"/>
+              <circle class="tm-pulse" id="tourPulse" r="6"/>
+              <circle class="tm-dot" id="tourDot" r="5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- Timetable: day tabs, timeline rail, filters and bookable tickets (rendered by site.js) -->
+    <section class="section tt-section" id="timetable">
+      <div class="tt-head">
+        <div>
+          <p class="eyebrow" data-reveal>Timetable</p>
+          <h2 data-split>Plan your day</h2>
+        </div>
+        <div class="tt-days" role="tablist" aria-label="Choose a day" data-reveal></div>
+      </div>
+      <div class="tt-rail" data-reveal>
+        <div class="tt-axis" aria-hidden="true"></div>
+        <div class="tt-track">
+          <span class="tt-line"></span>
+          <div class="tt-dots"></div>
+          <div class="tt-now" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+      <div class="tt-bar">
+        <div class="tt-filters" role="group" aria-label="Filter classes" data-reveal></div>
+        <div class="tt-arrows" data-reveal>
+          <button class="tt-arrow" type="button" data-dir="-1" aria-label="Previous classes">←</button>
+          <button class="tt-arrow" type="button" data-dir="1" aria-label="Next classes">→</button>
+        </div>
+      </div>
+      <div class="tt-strip" tabindex="0" aria-label="Classes" aria-live="polite"></div>
+      <noscript><p class="lede">Classes run daily from 06:30 to 20:00. Call reception to book.</p></noscript>
+    </section>
+
+    <!-- Pricing: billing toggle, rolling prices, side plans fan out (--pp, site.js), value calculator -->
+    <section class="section pricing" id="pricing">
+      <p class="price-bg-word" aria-hidden="true" data-scroll-x="-30">No contract · No joining fee · No contract · No joining fee</p>
+      <div class="price-top">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Pricing</p>
+          <h2 data-split>One price. No contract.</h2>
+          <p class="lede" data-reveal>Cancel any time from the app. No joining fee, no small print.</p>
+        </div>
+        <div class="bill-toggle" role="group" aria-label="Billing period" data-reveal>
+          <button type="button" aria-pressed="true" data-bill="monthly">Pay monthly</button>
+          <button type="button" aria-pressed="false" data-bill="yearly">Pay yearly <span>2 months free</span></button>
+          <i class="bill-pill" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="price-grid" id="priceGrid">
+        <div class="price-glow" aria-hidden="true"></div>
+        <div class="plan plan-side" data-tilt>
+          <h3>Day pass</h3>
+          <p class="price"><span class="cur">£</span><span class="roll" data-monthly="8" data-yearly="8" aria-hidden="true"></span><span class="sr-only" data-monthly="£8 per day" data-yearly="£8 per day">£8 per day</span><small>/ day</small></p>
+          <p class="note">Try the floor before you join.</p>
+          <ul><li>Full gym access</li><li>One class</li></ul>
+          <a class="btn btn-ghost" href="#pricing" data-join="day">Buy a pass</a>
+        </div>
+        <div class="plan plan-main" data-tilt>
+          <span class="plan-flag">Most popular</span>
+          <h3>Monthly</h3>
+          <p class="price"><span class="cur">£</span><span class="roll" data-monthly="29" data-yearly="24" aria-hidden="true"></span><span class="sr-only" data-monthly="£29 per month" data-yearly="£24 per month, billed yearly">£29 per month</span><small>/ month</small></p>
+          <p class="note" data-monthly="No contract. Cancel any time." data-yearly="Billed £290 a year. That's 2 months free.">No contract. Cancel any time.</p>
+          <ul><li>Unlimited gym access</li><li>All Spin, HIIT &amp; Yoga classes</li><li>Free induction with a coach</li><li>Open 6am–10pm, 7 days</li></ul>
+          <a class="btn" href="#pricing" data-join="monthly" data-monthly="Join for £29/month" data-yearly="Join for £290/year">Join for £29/month</a>
+        </div>
+        <div class="plan plan-side" data-tilt>
+          <h3>Student</h3>
+          <p class="price"><span class="cur">£</span><span class="roll" data-monthly="22" data-yearly="18" aria-hidden="true"></span><span class="sr-only" data-monthly="£22 per month" data-yearly="£18 per month, billed yearly">£22 per month</span><small>/ month</small></p>
+          <p class="note" data-monthly="With a valid student ID." data-yearly="Billed £216 a year, with student ID.">With a valid student ID.</p>
+          <ul><li>Unlimited gym access</li><li>All classes</li></ul>
+          <a class="btn btn-ghost" href="#pricing" data-join="student">Join as a student</a>
+        </div>
+      </div>
+
+      <div class="value-calc" data-reveal>
+        <div class="vc-q">
+          <p class="eyebrow">Do the maths</p>
+          <p class="vc-title">How often will you train?</p>
+        </div>
+        <div class="vc-control">
+          <input type="range" id="vcRange" min="1" max="7" value="3" aria-label="Sessions per week">
+          <div class="vc-days" aria-hidden="true"><i>M</i><i>T</i><i>W</i><i>T</i><i>F</i><i>S</i><i>S</i></div>
+          <p class="vc-count"><b id="vcTimes">3</b> sessions a week</p>
+        </div>
+        <div class="vc-out" aria-live="polite">
+          <strong id="vcCost">£2.23</strong>
+          <span>per session on Monthly</span>
+          <em id="vcSave">You save £75 a month vs day passes</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials: a members' group chat that plays itself (messages scripted in site.js) -->
+    <section class="section voices" aria-labelledby="quotesTitle">
+      <div class="voices-grid">
+        <div class="voices-intro">
+          <p class="eyebrow" data-reveal>Members</p>
+          <h2 id="quotesTitle" data-split>Heard in the members' chat</h2>
+          <p class="lede" data-reveal>What people say about Ironworks when they think we're not listening.</p>
+          <div class="voices-proof" data-reveal>
+            <div class="voices-rating"><strong>4.8</strong><div><span aria-hidden="true">★★★★★</span><small>Average member rating</small></div></div>
+            <div class="voices-people">
+              <div class="avatar-stack" aria-hidden="true"><i style="--c:#ff5b24">S</i><i style="--c:#ffc23d">A</i><i style="--c:#7fd1b9">T</i><i style="--c:#b49cff">J</i><i style="--c:#ff8fa3">M</i></div>
+              <small><b>+240 members</b> in the chat</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat" id="memberChat" data-inview>
+          <div class="chat-top">
+            <span class="chat-group" aria-hidden="true">IW</span>
+            <div><b>Ironworks Members 💪</b><small id="chatStatus">248 members · 12 online</small></div>
+            <span class="chat-live"><i></i>Live</span>
+          </div>
+          <div class="chat-body" id="chatBody" role="log" aria-live="polite" aria-label="Member messages"></div>
+          <a class="chat-join" href="#pricing">
+            <span>Join the chat — become a member</span>
+            <span class="chat-send" aria-hidden="true">➤</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA: pinned; video plays inside a giant "FREE", zooms through, then the offer card rises (--cp, site.js) -->
+    <div class="cta-pin" id="ctaPin">
+    <section class="cta-final" id="ctaFinal" aria-labelledby="ctaTitle">
+      <video class="cta-video" muted loop playsinline preload="none"
+        poster="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1600&q=70">
+        <source src="https://assets.mixkit.co/videos/52079/52079-720.mp4" type="video/mp4">
+      </video>
+      <svg class="cta-knock" viewBox="0 0 1000 600" aria-hidden="true">
+        <defs>
+          <mask id="ctaMask" maskUnits="userSpaceOnUse" x="-6000" y="-6000" width="13000" height="13000">
+            <rect x="-6000" y="-6000" width="13000" height="13000" fill="#fff"/>
+            <text x="500" y="300" text-anchor="middle" dominant-baseline="central">FREE</text>
+          </mask>
+        </defs>
+        <rect x="-6000" y="-6000" width="13000" height="13000" mask="url(#ctaMask)"/>
+        <text class="cta-knock-outline" x="500" y="300" text-anchor="middle" dominant-baseline="central">FREE</text>
+      </svg>
+      <p class="cta-pre" aria-hidden="true">Your first class is</p>
+      <div class="cta-shade" aria-hidden="true"></div>
+
+      <div class="cta-card">
+        <p class="eyebrow">Come and try it</p>
+        <h2 id="ctaTitle">Your first class is on us</h2>
+        <p class="cta-sub">Book any Spin, HIIT or Yoga class free. If you like it, stay for £29/month.</p>
+        <div class="cta-pick" role="group" aria-label="Pick a class">
+          <button type="button" aria-pressed="true" data-times="06:30 · 12:15 · 19:00" style="--tc:#ff5b24">Spin</button>
+          <button type="button" aria-pressed="false" data-times="07:15 · 13:00 · 18:00" style="--tc:#ffc23d">HIIT</button>
+          <button type="button" aria-pressed="false" data-times="09:30 · 17:30 · 20:00" style="--tc:#7fd1b9">Yoga</button>
+        </div>
+        <p class="cta-times">Runs daily at <b id="ctaTimes">06:30 · 12:15 · 19:00</b></p>
+        <a class="btn btn-pulse btn-arrow magnetic cta-btn" href="#timetable">Claim my free class <span class="btn-ic" aria-hidden="true">→</span></a>
+        <ul class="cta-trust"><li>No card needed</li><li>Takes 30 seconds</li><li>Cancel any time</li></ul>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <div class="foot-cols" data-stagger>
+      <div>
+        <a class="logo" href="#top"><span class="logo-mark">IW</span>Ironworks</a>
+        <p>12 Foundry Lane, Sample Town<br>Open 6am–10pm, 7 days</p>
+      </div>
+      <div>
+        <h4>Train</h4>
+        <ul><li><a href="#classes">Classes</a></li><li><a href="#timetable">Timetable</a></li><li><a href="#floor">The floor</a></li></ul>
+      </div>
+      <div>
+        <h4>Join</h4>
+        <ul><li><a href="#pricing">Pricing</a></li><li><a href="#pricing">Day pass</a></li><li><a href="#top">Contact</a></li></ul>
+      </div>
+    </div>
+    <p class="foot-mark" aria-hidden="true" data-mark>Ironworks</p>
+    <p class="foot-note">Ironworks Gym is a sample site made for a website-design demo. Photos: Unsplash · Video: Mixkit.</p>
+  </footer>
+
+  <!-- Booking confirmation (filled and opened by site.js) -->
+  <dialog class="bk" id="bookingDialog" aria-labelledby="bkTitle" aria-describedby="bkSub">
+    <div class="bk-card">
+      <div class="bk-confetti" aria-hidden="true"></div>
+      <div class="bk-check" aria-hidden="true">
+        <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34"/><path d="M25 41 l10 10 l21 -23"/></svg>
+      </div>
+      <p class="eyebrow bk-kicker" id="bkKicker">Booking confirmed</p>
+      <h3 id="bkTitle">You're booked in!</h3>
+      <p class="bk-sub" id="bkSub">See you on the floor.</p>
+      <div class="bk-ticket">
+        <div class="bk-row"><span>Class</span><b id="bkClass">Spin</b></div>
+        <div class="bk-row"><span id="bkWhenLabel">When</span><b id="bkWhen">Today</b></div>
+        <div class="bk-row"><span id="bkCoachLabel">Coach</span><b id="bkCoach">Dani</b></div>
+        <div class="bk-row"><span id="bkDurLabel">Duration</span><b id="bkDur">45 min</b></div>
+        <div class="bk-code"><span class="bk-bars" aria-hidden="true"></span><small id="bkRef">IW-0000</small></div>
+      </div>
+      <div class="bk-actions">
+        <a class="btn btn-ghost" id="bkCal" download>Add to calendar</a>
+        <button class="btn" type="button" id="bkDone">Done</button>
+      </div>
+      <button class="bk-x" type="button" aria-label="Close">×</button>
+    </div>
+  </dialog>
+
+  <!-- Join flow: plan + details, then a welcome step with a membership card (site.js) -->
+  <dialog class="bk jn" id="joinDialog" aria-labelledby="jnTitle">
+    <div class="bk-card jn-card">
+      <button class="bk-x" type="button" aria-label="Close">×</button>
+      <div class="jn-steps">
+        <div class="jn-step jn-form-step">
+          <p class="eyebrow">Join Ironworks</p>
+          <h3 id="jnTitle">Start your membership</h3>
+          <div class="jn-plans" role="radiogroup" aria-label="Choose a plan">
+            <button type="button" role="radio" aria-checked="false" data-plan="day"><b>Day pass</b><span class="jn-price"></span></button>
+            <button type="button" role="radio" aria-checked="true" data-plan="monthly"><b>Monthly</b><span class="jn-price"></span></button>
+            <button type="button" role="radio" aria-checked="false" data-plan="student"><b>Student</b><span class="jn-price"></span></button>
+          </div>
+          <form class="jn-form" novalidate>
+            <label>Full name<input name="name" autocomplete="name" placeholder="Alex Morgan" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email" placeholder="alex@example.com" required></label>
+            <p class="jn-error" role="alert"></p>
+            <div class="jn-total"><span id="jnTotalLabel">Due today</span><b id="jnTotal">£29</b></div>
+            <button class="btn btn-arrow" type="submit">Start membership <span class="btn-ic" aria-hidden="true">→</span></button>
+            <p class="jn-fine">No contract, cancel any time. Sample site: no payment is taken.</p>
+          </form>
+        </div>
+
+        <div class="jn-step jn-done-step" aria-live="polite">
+          <div class="bk-confetti" aria-hidden="true"></div>
+          <div class="bk-check" aria-hidden="true">
+            <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34"/><path d="M25 41 l10 10 l21 -23"/></svg>
+          </div>
+          <p class="eyebrow">You're in</p>
+          <h3 id="jnWelcome">Welcome to the crew!</h3>
+          <p class="bk-sub">Your membership starts today. Show this card at reception.</p>
+          <div class="jn-member">
+            <div class="jm-top"><span class="jm-logo"><i>IW</i>Ironworks</span><span class="jm-chip">Member</span></div>
+            <p class="jm-no" id="jmNo">IW 0000 0000</p>
+            <div class="jm-bottom">
+              <div><small>Name</small><b id="jmName">Alex Morgan</b></div>
+              <div><small>Plan</small><b id="jmPlan">Monthly</b></div>
+              <div><small>Since</small><b id="jmSince">2 Nov 2026</b></div>
+            </div>
+          </div>
+          <button class="btn jn-done" type="button">Let's go</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <aside class="nl-sheet" id="nlSheet" aria-label="Newsletter" aria-hidden="true">
+    <strong>Enjoying the tour?</strong>
+    <p>Get 10% off your first month by email.</p>
+    <form class="nl-sheet-form">
+      <input type="email" placeholder="Email address" aria-label="Email address" required>
+      <button class="btn btn-sm" type="submit">Get 10% off</button>
+    </form>
+    <button class="nl-sheet-close" type="button" aria-label="Close">×</button>
+  </aside>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

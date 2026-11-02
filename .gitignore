@@ -1,0 +1,6 @@
+# Client brief / storyboard (not for publishing)
+*.pdf
+# OS / editor
+.DS_Store
+Thumbs.db
+.vercel

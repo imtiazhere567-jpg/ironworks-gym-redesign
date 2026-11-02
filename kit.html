@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ironworks Gym · Preview Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tools.css">
+</head>
+<body class="canvas" data-phones="1">
+  <main class="hub-wrap">
+    <section class="hub-intro">
+      <p class="kicker">Website design · storyboard kit</p>
+      <h1>Ironworks Gym</h1>
+      <p>Sample site for “Guess what people do when a pop-up covers your site”. Pick a version to preview it in the phone, or open it full screen to record.</p>
+      <div class="hub-tabs" role="tablist" aria-label="Versions">
+        <button role="tab" aria-selected="true" data-src="before.html">Before · old site + pop-up <small>A1 A2 A4</small></button>
+        <button role="tab" aria-selected="false" data-src="after.html">After · new site, no pop-up <small>A5</small></button>
+        <button role="tab" aria-selected="false" data-src="after.html?popup=scroll">After · pop-up waits for scroll <small>Fix</small></button>
+        <button role="tab" aria-selected="false" data-src="search.html">Gyms near me results <small>A3</small></button>
+      </div>
+      <div class="hub-links">
+        <a id="openFull" href="before.html" target="_blank" rel="noopener">Open full screen ↗</a>
+        <a href="compare.html">Old vs new split (A6) →</a>
+      </div>
+      <ul class="hub-assets">
+        <li><b>Tip:</b> scroll inside the phone to see the animations.</li>
+        <li>On the search page, reload the phone to replay the tap.</li>
+      </ul>
+    </section>
+    <div class="phone-fit"><div class="phone"><iframe id="frame" src="before.html" title="Site preview"></iframe></div></div>
+  </main>
+  <script src="js/phone.js"></script>
+  <script>
+    (() => {
+      const frame = document.getElementById('frame');
+      const openFull = document.getElementById('openFull');
+      const tabs = document.querySelectorAll('.hub-tabs button');
+      tabs.forEach((tab) => tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
+        frame.src = tab.dataset.src;
+        openFull.href = tab.dataset.src;
+      }));
+    })();
+  </script>
+</body>
+</html>
